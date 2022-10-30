@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LinkButton from "./Components/LinkButton";
+import ProfilePic from "./Components/ProfilePic";
 
+import TextBanner from "./components/TextBanner";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfilePic />
+      <TextBanner
+        title="Zuri Training"
+        text="WHere you register for Zuri training"
+      />
+      <LinkButton name="Zuri Training" link="https://training.zuri.team/" />
+      <LinkButton name="Zuri Books" link="https://books.zuri.team/" />
+      <LinkButton name="Zuri Training" link="https://training.zuri.team/" />
+      <LinkButton name="Zuri Training" link="https://training.zuri.team/" />
+      <LinkButton name="Zuri Training" link="https://training.zuri.team/" />
     </div>
   );
 }
